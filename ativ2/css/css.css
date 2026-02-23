@@ -18,10 +18,15 @@ form {
     background: white;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9), 0 0 20px rgba(102, 126, 234, 0.3);
     margin: 20px 0;
     width: 100%;
     max-width: 400px;
+    transition: box-shadow 0.3s;
+}
+
+form:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 0 30px rgba(102, 126, 234, 0.5);
 }
 
 label {
@@ -38,6 +43,8 @@ input {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 14px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
 }
 
 input:focus {
@@ -56,10 +63,12 @@ button {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.4);
 }
 
 button:hover {
+    box-shadow: 0 6px 12px rgba(118, 75, 162, 0.5);
     background-color: #764ba2;
 }
 
